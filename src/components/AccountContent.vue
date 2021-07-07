@@ -250,6 +250,8 @@
   .acc-menu
     overflow-x: auto
   @media screen and (max-width: 768px)
+    .acc-content-canvas
+      padding: 16px
 
     .acc-menu__item
       height: 22px
@@ -262,6 +264,36 @@
     .acc-tariffs__variables
       table-layout: fixed
       width: 100%
+      &_head
+        width: auto
+        font-size: 12px
+        &:first-child
+          width: auto
+        &:not(:last-child)
+          margin-right: 3px
+
+  @media screen and (max-width: 500px)
+    .acc-tariffs__content
+      padding: 8px
+
+  @media screen and (max-width: 320px)
+
+    .acc-tariffs__variables
+      table-layout: fixed
+      width: 100%
+      &_head
+        width: auto
+        font-size: 10px
+        text-transform: uppercase
+        color: $greyText
+        &:first-child
+          width: auto
+        &:not(:last-child)
+          margin-right: 3px
+      &_data
+        margin-right: 3px
+        font-size: 12px
+
 
 
 </style>

@@ -183,5 +183,13 @@ export default {
     font-weight: 600;
   }
 
+  @media screen and (max-width: 768px) {
+    .container-fluid {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+  }
+
 
 </style>
